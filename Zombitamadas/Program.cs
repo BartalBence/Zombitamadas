@@ -91,7 +91,7 @@
 
         static void Harc(string[] lakossag, string[] zombik, int[] lakossagEletereje, int[] zombikEreje)
         {
-            for (int i = 0; i < zombik.Length; i++)
+            for (int i = 0; i < zombik.Length-1; i++)
             {
                 int index = r.Next(0, lakossag.Length);
                 Console.WriteLine($"{zombik[i]} zombi rátámadt {zombikEreje[i]} erővel {lakossag[index]}, akinek kezdeti életereje: {lakossagEletereje[index]}.");
